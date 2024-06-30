@@ -1,0 +1,49 @@
+body{
+    flex-direction: column;
+    width:100vw;
+}
+body,main{
+    display: flex;
+}
+main{
+    flex-direction: row;
+    flex:auto;
+}
+
+
+
+article{
+    flex:2;
+    padding:40px 40px;
+    box-sizing: border-box;
+}
+aside{
+    flex:1
+}
+
+article,aside{
+    overflow-y:auto;
+}
+
+.alx-logo{
+    width:300px;
+}
+
+header{
+    background-color:orange;
+    align-items: center;
+    display: flex;
+    padding: 10px 100px;
+}
+
+footer{
+    color:white;
+    background-color:#1a1c22;
+    padding:20px 100px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+footer a{
+    color:green;
+}
