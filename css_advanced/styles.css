@@ -1,0 +1,122 @@
+html,body{
+    margin:0px;
+    padding:0px;
+}
+header{
+    position:absolute;
+    top:0px;
+    padding:0px 10%;
+    margin-top:30px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+header nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    /* background-color:green; */
+}
+
+header nav .logo{
+    object-fit: contain;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size:12px;
+    font-weight:700;
+    line-height: 15.08px;
+}
+
+section.hero {
+    background-image:url('./img/Object.png');
+    background-size:cover;
+    height:100vh;
+}
+
+.hero .main-text-wrapper {
+    /* background-color:green; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero .main-text-wrapper .get-schooled-text {
+    font-size:120px;
+    line-height: 150.84px;
+    font-weight:700;
+    margin-bottom:0px;
+    color:white;
+    margin-top:230px;
+}
+.hero .main-text-wrapper .tagline-list {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:300px;
+    color:white;
+    font-weight:700;
+    /* background-color:orange; */
+}
+.hero .main-text-wrapper .register-button {
+    background-color:#C271FF;
+    color:white;
+    padding:15px 25px;
+    font-size:14px;
+    border:none;
+    border-radius:40px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0,0.5);
+    margin-top:50px;
+}
+
+.hero .bottom-text-area .learn-from-pros-text{
+    text-align: center;
+    color:white;
+    margin-top:150px;
+    margin-bottom:100px;
+    font-size:32px;
+}
+
+.hero .bottom-text-area .learn-from-pros-text .learn{
+    color:#C271FF;
+    font-weight:700;
+}
+
+.hero .bottom-text-area .pros-grid{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0px auto;
+}
+.hero .bottom-text-area .pros-grid-item{
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .bottom-text-area .pros-grid-item img{
+    border-radius:50%;
+    width:150px;
+    height:150px;
+    object-fit: cover;
+}
+.hero .bottom-text-area .pros-grid-item h3{
+    margin-bottom:5px;
+}
+.hero .bottom-text-area .pros-grid-item p{
+    margin-top:5px;
+    text-align:center;
+    font-style:italic;
+}
