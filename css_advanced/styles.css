@@ -1,11 +1,13 @@
-html,body{
-    margin:0px;
-    padding:0px;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 header{
     position:absolute;
     top:0px;
-    padding:0px 10%;
     margin-top:30px;
     width:100%;
     box-sizing: border-box;
@@ -15,7 +17,8 @@ header nav{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    /* background-color:green; */
+    width:1100px;
+    margin:0px auto;
 }
 
 header nav .logo{
@@ -67,7 +70,8 @@ section.hero {
     font-weight:700;
     /* background-color:orange; */
 }
-.hero .main-text-wrapper .register-button {
+
+.register-btn {
     background-color:#C271FF;
     color:white;
     padding:15px 25px;
@@ -86,7 +90,7 @@ section.hero {
     font-size:32px;
 }
 
-.hero .bottom-text-area .learn-from-pros-text .learn{
+.highlighted-text{
     color:#C271FF;
     font-weight:700;
 }
@@ -96,7 +100,7 @@ section.hero {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 900px;
+    width:1100px;
     margin: 0px auto;
 }
 .hero .bottom-text-area .pros-grid-item{
@@ -130,7 +134,7 @@ section.hero {
     display:flex;
     flex-direction:row;
     align-items:center;
-    width:900px;
+    width:1100px;
     margin:0px auto;
 }
 .quote .quote-inner-wrapper .image-wrapper{
@@ -149,4 +153,200 @@ section.hero {
 .quote .quote-inner-wrapper .text-wrapper .commenter-role{
     margin-top:0px;
     font-style: italic;
+}
+.most-popular-tutorials{
+    padding:100px 0px;
+}
+
+.most-popular-tutorials h2{
+    font-size:32px;
+    margin-bottom:80px;
+    text-align: center;
+}
+.most-popular-tutorials .tutorials-grid{
+    width:1100px;
+    margin:0px auto;
+    /* background-color:green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.most-popular-tutorials .tutorials-grid .tutorials-grid-item{
+    width:22%;
+}
+.most-popular-tutorials .tutorials-grid .tutorials-grid-item .image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.most-popular-tutorials .tutorials-grid .tutorials-grid-item .image-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    background: url('./img/play.png') no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+}
+
+
+.most-popular-tutorials .tutorials-grid .reviewer-grid{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    color:#C271FF;
+}
+.most-popular-tutorials .tutorials-grid .reviewer-grid img{
+    width:30px;
+    height:30px;
+    margin-right:15px;
+}
+.most-popular-tutorials .tutorials-grid .review-wrapper{
+    color:#C271FF;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+.most-popular-tutorials .tutorials-grid .description{
+    color:rgba(7, 22, 41, 0.5);
+}
+.most-popular-tutorials .tutorials-grid .review-wrapper p{
+    margin:0px;
+    font-size:14px;
+    color:#C271FF;
+}
+.most-popular-tutorials .tutorials-grid .stars-wrapper{
+    display:flex;
+    flex-direction:row;
+}
+
+.most-popular-tutorials .tutorials-grid .stars-wrapper i{
+    color:#C271FF;
+    margin-right:10px;
+    font-size:14px;
+}
+.most-popular-tutorials .tutorials-grid .stars-wrapper .unrated{
+    color:rgba(216, 216, 216, 1);
+}
+
+
+
+.free-membership{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #071629;
+    color:white;
+    padding:80px 0px;
+}
+.free-membership h2{
+    font-size:32px;
+    margin-bottom:70px;
+    font-weight:700;
+}
+
+.free-membership .free-membership-grid{
+    width:1100px;
+    margin:0px auto;
+    /* background-color: green; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.free-membership .free-membership-grid .free-membership-grid-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.free-membership .free-membership-grid .free-membership-grid-item h3{
+    font-size:18px;
+    font-weight:600px;
+    margin-bottom:0px;
+}
+.free-membership .free-membership-grid .free-membership-grid-item p{
+    font-size:14px;
+    line-height: 26px;
+}
+
+.faq {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:80px 0px;
+}
+
+.faq h2 {
+    font-size:60px;
+    margin-bottom:70px;
+    font-weight:700;
+}
+
+.faq .faq-grid{
+    width:1100px;
+    margin:0px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.faq .faq-grid .faq-grid-items{
+    width:40%;
+}
+.faq .faq-grid .faq-grid-items h3{
+    color: rgba(7, 22, 41, 1);
+    font-size:16px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+.faq .faq-grid .faq-grid-items .faq-description{
+    color:rgba(7, 22, 41, 0.5);
+    margin-bottom:100px;
+}
+
+footer{
+    background-color:#071629;
+    color:white;
+    padding:100px 0px;
+    padding-bottom:50px;
+}
+footer section{
+    width:1100px;
+    margin:0px auto;
+}
+footer section .top-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+footer section .social-icons {
+    display:flex;
+}
+footer section .social-icons i{
+    margin-right: 20px;
+    background-color: white;
+    color: #071629;
+    border-radius: 50%;
+    padding: 10px;
+    width: 10px;
+    display: flex;
+    height: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer section p{
+    text-align:center;
+    font-size:12px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 1);
+    opacity:0.3517;
 }
