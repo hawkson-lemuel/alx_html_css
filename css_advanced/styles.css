@@ -120,3 +120,33 @@ section.hero {
     text-align:center;
     font-style:italic;
 }
+
+.quote{
+    background-color:#C271FF;
+    color:white;
+    padding:100px 0px; 
+}
+.quote .quote-inner-wrapper{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    width:900px;
+    margin:0px auto;
+}
+.quote .quote-inner-wrapper .image-wrapper{
+    margin-right:50px;
+}
+.quote .quote-inner-wrapper .text-wrapper{
+    font-size:22px;
+}
+.quote .quote-inner-wrapper blockquote{
+    margin:0px;
+}
+.quote .quote-inner-wrapper .text-wrapper .commenter-name{
+    margin-bottom:10px;
+    margin-top:45px;
+}
+.quote .quote-inner-wrapper .text-wrapper .commenter-role{
+    margin-top:0px;
+    font-style: italic;
+}
