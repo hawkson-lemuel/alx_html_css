@@ -34,14 +34,15 @@ The SmileSchool website is a platform where users can register for free and lear
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/smile-school.git
-2. Open the project in the editor of your choice (eg. Visual Studio Code).
-3. Happy Coding!
+   git clone https://github.com/hawkson-lemuel/alx_html_css.git
+2. In the repo you just cloned, navigate to the ```css_advanced``` folder.
+3. Open the ```css_advanced``` folder in the editor of your choice (eg. Visual Studio Code).
+4. Happy Coding!
 
 
 ### Usage 
 
-1. In the project directory, right click on "index.html" and select "Open With"
+1. In the ```alx_html_css/css_advanced``` directory, right click on "index.html" and select "Open With"
 2. Then select your browser in the list of application options (eg. Google Chrome)
 3. The website should open up in the browser you selected
 
