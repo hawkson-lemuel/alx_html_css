@@ -1,0 +1,242 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    color: #fff;
+    position:absolute;
+    width:100%;
+}
+
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin:0px auto;
+    margin-top:20px;
+}
+
+.logo {
+    height:30px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.hero {
+    background: url('./images/headphones_hero_1.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+.hero-content .subtext-1{
+    font-size:16px;
+    font-weight:bold;
+    margin-top:0px;
+}
+.hero-content .subtext-2{
+    font-size:16px;
+    margin-top:100px;
+    width:650px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    width:200px;
+    background: #ff5a5f;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 50px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+section {
+    padding: 50px;
+}
+
+section .section-inner-wrapper{
+    width:1000px;
+    margin:0px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#our-results{
+    color:white;
+    background:url('./images/headphones_hero_2.jpg') no-repeat center center/cover;
+}
+
+.pentagon {
+    padding:40px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #ff5f5f;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  }
+
+  .result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+
+section .subtext-2{
+    width:650px;
+    text-align: center;
+    margin-bottom:100px;
+}
+
+#what-we-do h3{
+    margin:10px 0px;
+}
+#what-we-do .services p{
+    font-size:14px;
+    line-height: 26px;
+    color:#071629;
+}
+
+#contact-us{
+    padding-bottom:90px;
+}
+
+#our-results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:100px 0px;
+}
+
+#what-we-do h2,
+#our-results h2,
+#contact-us h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+
+.services,
+.results {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width:1000px;
+    margin:0px auto;
+}
+
+.service,
+.result {
+    text-align: center;
+    flex: 1;
+}
+
+.service img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.results .result h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#contact-us form input,
+#contact-us form textarea {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 400px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 0px;
+    color: black;
+}
+
+footer {
+    background: #071629;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:80px 0px;
+}
+
+footer .footer-inner-wrapper{
+    width:1000px;
+    margin:0px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer p{
+    font-size:12px;
+    opacity: 0.36;
+    margin-top:50px;
+    margin-bottom:0px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
