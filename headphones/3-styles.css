@@ -188,8 +188,9 @@ section .section-inner-wrapper{
     position: relative;
     width: 100px;
     height: 100px;
-    background: #ff5f5f;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-image:url('./images/pentagone.png');
+    background-size:contain;
+    background-repeat: no-repeat;
   }
 
   .result {
@@ -300,44 +301,6 @@ section .subtext-2{
     color: black;
 }
 
-footer {
-    background: #071629;
-    color: #fff;
-    padding: 20px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:80px 0px;
-}
-
-footer .footer-inner-wrapper{
-    max-width:1000px;
-    width:90%;
-    margin:0px auto;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-footer p{
-    font-size:12px;
-    opacity: 0.36;
-    margin-top:50px;
-    margin-bottom:0px;
-}
-
-.social-media button{
-    border:none;
-    background-color:transparent;
-}
-
-.social-media button img {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-}
-
 @media screen and (min-width: 480px) and (max-width:768px){
     .results {
         display: grid;
@@ -437,17 +400,5 @@ footer p{
     #contact-us form input,
     #contact-us form textarea {
         width: 100%;
-    }
-
-    footer .footer-inner-wrapper {
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction:column;
-        gap:20;
-    }
-
-    footer .logo {
-        margin-bottom:20px;
     }
 }
