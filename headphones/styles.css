@@ -1,37 +1,65 @@
-/* styles.css */
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
 }
 
+a:active, a:hover{
+    color: #FF6565;
+ }
+
+ button:active, button:hover{
+    opacity: 0.9;
+    cursor:pointer;
+ }
+
 header {
-    color: #fff;
-    position:absolute;
     width:100%;
+    /* background-color: blue; */
+    position:absolute;
 }
 
-
-nav{
+header .header-wrapper{
+    /* background-color: green; */
+    color: #fff;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    max-width: 1000px;
+    width:90%;
     margin:0px auto;
-    margin-top:20px;
+    padding:10px 0px;
+    /* margin-top:20px; */
+}
+header .header-wrapper .menu-button{
+    display:none;
 }
 
 .logo {
     height:30px;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.nav-responsive-wrapper{
+    overflow:hidden;
+    height:0px;
+    transition: height 0.3s;
 }
 
-header nav ul li a {
+header nav ul {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    gap: 20px;
+    padding-left:0px;
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size:12px;
@@ -43,9 +71,20 @@ header nav ul li a {
     height: 80vh;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
+    flex-direction:column;
+}
+
+.hero-content {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.hero .hero-content .subtext-2 {
+    margin-bottom:50px;
 }
 
 .hero-content h1 {
@@ -61,7 +100,7 @@ header nav ul li a {
 .hero-content .subtext-2{
     font-size:16px;
     margin-top:100px;
-    width:650px;
+    max-width:650px;
 }
 
 .hero-content p {
@@ -88,7 +127,7 @@ section {
 }
 
 section .section-inner-wrapper{
-    width:1000px;
+    max-width:1000px;
     margin:0px auto;
     display:flex;
     flex-direction:column;
@@ -123,7 +162,8 @@ section .section-inner-wrapper{
 
 
 section .subtext-2{
-    width:650px;
+    max-width:650px;
+    width:80%;
     text-align: center;
     margin-bottom:100px;
 }
@@ -161,7 +201,9 @@ section .subtext-2{
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    width:1000px;
+    max-width:1000px;
+    width:100%;
+    flex-wrap: wrap;
     margin:0px auto;
 }
 
@@ -174,6 +216,7 @@ section .subtext-2{
 .service img {
     width: 50px;
     height: 50px;
+    object-fit: contain;
     margin-bottom: 10px;
 }
 
@@ -215,7 +258,8 @@ footer {
 }
 
 footer .footer-inner-wrapper{
-    width:1000px;
+    max-width:1000px;
+    width:90%;
     margin:0px auto;
     display:flex;
     justify-content: space-between;
@@ -230,13 +274,99 @@ footer p{
     margin-bottom:0px;
 }
 
-.footer-logo {
-    font-size: 24px;
-    font-weight: bold;
+.social-media button{
+    border:none;
+    background-color:transparent;
 }
 
-.social-media a img {
+.social-media button img {
     width: 30px;
     height: 30px;
     margin-left: 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    header .header-wrapper{
+        flex-direction:column;
+        gap:20px;
+        padding:30px 0px;
+    }
+
+    header .header-wrapper .menu-button{
+        display:flex;
+        position:absolute;
+        left:40px;
+        top:40px;
+    }
+
+    header .header-wrapper nav{
+        display:none;
+    }
+
+    .hero {
+        min-height: 100vh;
+        justify-content: space-between;
+    }
+
+    .hero .nav-responsive-wrapper{
+        display: flex;
+        width: 100%;
+
+        /* background-color: pink; */
+        text-align: center;
+        top: 60px;
+        justify-content: center;
+    }
+    .hero .nav-responsive-wrapper nav ul li{
+        padding:15px 0px;
+    }
+
+    section .section-inner-wrapper{
+        width:100%;
+    }
+
+    section .subtext-2{
+        width:80%;
+    }
+
+    #what-we-do h2,
+    #our-results h2,
+    #contact-us h2 {
+        font-size: 20px;
+    }
+
+    .services,
+    .results {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service,
+    .result {
+        flex:auto;
+        width:50%;
+        flex-basis: 50%;
+    }
+
+    #contact-us form input,
+    #contact-us form textarea {
+        width: 100%;
+    }
+
+    footer .footer-inner-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction:column;
+        gap:20;
+    }
+
+    footer .logo {
+        margin-bottom:20px;
+    }
 }
