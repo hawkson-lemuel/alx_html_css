@@ -43,12 +43,6 @@ header .header-wrapper .menu-button{
     height:30px;
 }
 
-.nav-responsive-wrapper{
-    overflow:hidden;
-    height:0px;
-    transition: height 0.3s;
-}
-
 header nav ul {
     display: flex;
 }
@@ -285,7 +279,6 @@ footer p{
     margin-left: 10px;
 }
 
-
 @media screen and (max-width: 480px) {
 
     header .header-wrapper{
@@ -302,25 +295,21 @@ footer p{
     }
 
     header .header-wrapper nav{
-        display:none;
+        overflow:hidden;
+        height:0px;
+        transition: height 0.3s;
+    }
+
+    header .header-wrapper nav ul{
+        flex-direction: column;
     }
 
     .hero {
         min-height: 100vh;
-        justify-content: space-between;
     }
 
-    .hero .nav-responsive-wrapper{
-        display: flex;
-        width: 100%;
-
-        /* background-color: pink; */
-        text-align: center;
-        top: 60px;
-        justify-content: center;
-    }
-    .hero .nav-responsive-wrapper nav ul li{
-        padding:15px 0px;
+    #toggle:checked ~ nav {
+        height:127px;
     }
 
     section .section-inner-wrapper{
