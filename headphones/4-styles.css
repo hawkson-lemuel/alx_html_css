@@ -188,8 +188,9 @@ section .section-inner-wrapper{
     position: relative;
     width: 100px;
     height: 100px;
-    background: #ff5f5f;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-image:url('./images/pentagone.png');
+    background-size:contain;
+    background-repeat: no-repeat;
   }
 
   .result {
