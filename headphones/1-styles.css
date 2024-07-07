@@ -178,35 +178,6 @@ section .section-inner-wrapper{
 .holberton_school-icon-ic_music::before {content: '\e90d';}
 .holberton_school-icon-ic_hearing::before {content: '\e909';} 
 
-#our-results{
-    color:white;
-    background:url('./images/headphones_hero_2.jpg') no-repeat center center/cover;
-}
-
-.pentagon {
-    padding:40px;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background: #ff5f5f;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  }
-
-  .result {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-
-  .result p{
-    width:120px;
-    font-size:13px;
-  }
-
 
 section .subtext-2{
     max-width:650px;
@@ -229,27 +200,13 @@ section .subtext-2{
     color:#ff5a5f;
 }
 
-#contact-us{
-    padding-bottom:90px;
-}
-
-#our-results{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:100px 0px;
-}
-
-#what-we-do h2,
-#our-results h2,
-#contact-us h2 {
+#what-we-do h2{
     text-align: center;
     margin-bottom: 50px;
     font-size: 28px;
 }
 
-.services,
-.results {
+.services {
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -259,112 +216,19 @@ section .subtext-2{
     margin:0px auto;
 }
 
-.service,
-.result {
+.service {
     text-align: center;
     flex: 1;
 }
 
-.service img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.results .result h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-#contact-us form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-#contact-us form input,
-#contact-us form textarea {
-    padding: 15px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    width: 400px;
-    padding-bottom: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    padding-left: 0px;
-    color: black;
-}
-
-footer {
-    background: #071629;
-    color: #fff;
-    padding: 20px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:80px 0px;
-}
-
-footer .footer-inner-wrapper{
-    max-width:1000px;
-    width:90%;
-    margin:0px auto;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-footer p{
-    font-size:12px;
-    opacity: 0.36;
-    margin-top:50px;
-    margin-bottom:0px;
-}
-
-.social-media button{
-    border:none;
-    background-color:transparent;
-}
-
-.social-media button img {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-}
 
 @media screen and (min-width: 480px) and (max-width:768px){
-    .results {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px; 
-        align-items: center;
-        justify-items: center;
-    }
-
-    .pentagon:nth-child(1){
-        justify-self: flex-end;
-    }
-    .pentagon:nth-child(2){
-        justify-self: flex-start;
-    }
-    .pentagon:nth-child(3){
-        justify-self: flex-end;
-    }
-    .pentagon:nth-child(4){
-        justify-self: flex-start;
-    }
     
     section .section-inner-wrapper{
         width:80%;
     }
 
-    .service,
-    .result {
+    .service {
         flex:auto;
         flex-basis: 40%;
     }
@@ -411,14 +275,11 @@ footer p{
         width:80%;
     }
 
-    #what-we-do h2,
-    #our-results h2,
-    #contact-us h2 {
+    #what-we-do h2 {
         font-size: 20px;
     }
 
-    .services,
-    .results {
+    .services {
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
@@ -426,27 +287,10 @@ footer p{
         align-items: center;
     }
 
-    .service,
-    .result {
+    .service {
         flex:auto;
         width:50%;
         flex-basis: 50%;
     }
 
-    #contact-us form input,
-    #contact-us form textarea {
-        width: 100%;
-    }
-
-    footer .footer-inner-wrapper {
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction:column;
-        gap:20;
-    }
-
-    footer .logo {
-        margin-bottom:20px;
-    }
 }
