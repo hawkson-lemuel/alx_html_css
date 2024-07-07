@@ -184,7 +184,7 @@ section .section-inner-wrapper{
 }
 
 .pentagon {
-    padding:40px;
+    padding:50px;
     position: relative;
     width: 100px;
     height: 100px;
@@ -431,7 +431,6 @@ footer p{
     .service,
     .result {
         flex:auto;
-        width:50%;
         flex-basis: 50%;
     }
 

@@ -430,7 +430,6 @@ footer p{
     .service,
     .result {
         flex:auto;
-        width:50%;
         flex-basis: 50%;
     }
 
